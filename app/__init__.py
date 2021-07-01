@@ -23,7 +23,7 @@ class Config(dict):
 config = Config()
 
 # Instanciate FLASK
-app = Flask(__name__)
+app = Flask(__name__,static_url_path='/',static_folder='/home/silver/mycoin/bitshares-ui/build/dist/')
 
 # Flask settings
 app.config['SESSION_TYPE'] = 'memcached'
