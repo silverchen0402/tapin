@@ -113,6 +113,7 @@ def tapbasic(referrer):
             return api_error(str(e))
 
     # Create new account
+    print(">>>begin register")
     try:
         tx = bitshares.create_account(
             account["name"],
@@ -128,6 +129,7 @@ def tapbasic(referrer):
             additional_owner_keys=config.get("additional_owner_keys", []),
             additional_active_keys=config.get("additional_active_keys", []),
         )
+        print(tx)
     except Exception as e:
         log.error(traceback.format_exc())
         return api_error(str(e))

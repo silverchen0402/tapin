@@ -65,6 +65,7 @@ log_handler_mail.setFormatter(logging.Formatter(
 ))
 log_handler_mail.setLevel(logging.WARN)
 log_handler_stdout = logging.StreamHandler(sys.stdout)
+log_handler_stdout.setLevel(logging.DEBUG)
 formatter = logging.Formatter(
     '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
@@ -72,7 +73,7 @@ log_handler_stdout.setFormatter(formatter)
 log_handler_rotate = RotatingFileHandler('faucet.log',
                                          maxBytes=1024 * 1024 * 100,
                                          backupCount=20)
-log_handler_rotate.setLevel(logging.CRITICAL)
+log_handler_rotate.setLevel(logging.DEBUG)
 app.logger.addHandler(log_handler_mail)
 app.logger.addHandler(log_handler_rotate)
 app.logger.addHandler(log_handler_stdout)
