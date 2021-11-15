@@ -1,0 +1,16 @@
+admins:
+- silver.sojo@gmail.com
+balance_mailthreshold: 500
+core_asset: BTS
+default_referrer: admin
+mail_from: silver.sojo@gmail.com
+mail_host: email-smtp.us-west-2.amazonaws.com:587
+mail_pass: BLUPvEsFPfjSLlxcBWtlick1e50EytOHX7cJXvJu8B6h
+mail_user: AKIA5ERG6ZFPCBG6IESA
+minIPAge: 300
+nobroadcast: false
+referrer_percent: 50
+registrar: admin
+secret_key: abcd12345678
+wif: 5KNP4D9K3FL1gBtRtanhfgLZTpz1wcJVsLEQXonRMeAwzMDL2se
+witness_url: ws://192.168.0.104:30201
