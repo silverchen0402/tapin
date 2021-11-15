@@ -58,5 +58,5 @@ target/
 # Vim temp files
 *.swp
 .env
-config.yml
+#config.yml
 app/database.db
