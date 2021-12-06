@@ -41,7 +41,7 @@ def install():
 def run():
     """ Run the faucet in operational mode """
     from app.web import app
-    app.run(host='0.0.0.0',port=3000)
+    app.run(host='0.0.0.0',port=5000)
 
 
 @main.command()
